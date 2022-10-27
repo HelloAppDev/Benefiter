@@ -1,0 +1,6 @@
+framework module Pods_Benefiter {
+  umbrella header "Pods-Benefiter-umbrella.h"
+
+  export *
+  module * { export * }
+}

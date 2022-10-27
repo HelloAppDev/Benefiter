@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Calculations View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CalculationsViewController" customModule="Benefiter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vsp-NL-J0D" customClass="ProductView" customModule="Benefiter" customModuleProvider="target">
+                                <rect key="frame" x="32" y="99" width="350" height="214"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DDE-7j-xLD" customClass="ProductView" customModule="Benefiter" customModuleProvider="target">
+                                <rect key="frame" x="32" y="328" width="350" height="214"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZA-1H-nvH">
+                                <rect key="frame" x="168.5" y="563" width="77" height="76"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plusButton" imagePlacement="top"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="conrerRadius">
+                                        <real key="value" value="38"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="plusButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="19q-4E-70r"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fqb-kw-aT2" customClass="ProductView" customModule="Benefiter" customModuleProvider="target">
+                                <rect key="frame" x="32" y="557" width="350" height="214"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Wf-Ja-kqz">
+                                <rect key="frame" x="80" y="786" width="254" height="64"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="24"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="CALCULATE">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="conrerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="calculateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mA6-Yu-2O4"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="3so-RZ-3Xx">
+                                <rect key="frame" x="48" y="50" width="318" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkt-Uw-Pmc">
+                                        <rect key="frame" x="0.0" y="0.0" width="67.5" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="1 gr">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="conrerRadius">
+                                                <real key="value" value="17"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="topButtonsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="99J-3q-MJG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwH-2o-Z8K">
+                                        <rect key="frame" x="83.5" y="0.0" width="67.5" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="15"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="10 gr"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="conrerRadius">
+                                                <real key="value" value="17"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="topButtonsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NPo-Xl-I6V"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLn-SW-4sa">
+                                        <rect key="frame" x="167" y="0.0" width="67.5" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="100 gr"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="conrerRadius">
+                                                <real key="value" value="17"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="topButtonsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x9P-z9-t7w"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOH-kE-D1i">
+                                        <rect key="frame" x="250.5" y="0.0" width="67.5" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="1 kg"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="conrerRadius">
+                                                <real key="value" value="17"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="topButtonsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AGn-uK-O5g"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ieg-Nk-hTK">
+                                <rect key="frame" x="80" y="786" width="254" height="64"/>
+                                <color key="backgroundColor" red="0.99607843159999998" green="0.98039215800000001" blue="0.53725492949999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="24"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="conrerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JTH-t3-0sZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.92941176470588238" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Fqb-kw-aT2" firstAttribute="leading" secondItem="vsp-NL-J0D" secondAttribute="leading" id="16r-sy-eOI"/>
+                            <constraint firstItem="Ieg-Nk-hTK" firstAttribute="top" secondItem="Fqb-kw-aT2" secondAttribute="bottom" constant="15" id="2gg-6S-5Fp"/>
+                            <constraint firstItem="3so-RZ-3Xx" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0379464" priority="750" id="8Dr-Q8-jqe"/>
+                            <constraint firstItem="Fqb-kw-aT2" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.227679" constant="9.9996160000000032" id="AhW-kt-Lgp"/>
+                            <constraint firstItem="vsp-NL-J0D" firstAttribute="top" secondItem="3so-RZ-3Xx" secondAttribute="bottom" constant="15" id="CbS-5a-klc"/>
+                            <constraint firstItem="Fqb-kw-aT2" firstAttribute="trailing" secondItem="vsp-NL-J0D" secondAttribute="trailing" id="CdD-0m-lxh"/>
+                            <constraint firstItem="Ieg-Nk-hTK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FUg-9f-j9E"/>
+                            <constraint firstItem="vsp-NL-J0D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="IbU-XL-Msl"/>
+                            <constraint firstItem="3so-RZ-3Xx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MyZ-Td-0yB"/>
+                            <constraint firstItem="ZZA-1H-nvH" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0859375" constant="-1" id="R4r-XQ-BEB"/>
+                            <constraint firstItem="Ieg-Nk-hTK" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.613527" priority="750" id="RgO-d3-Tdx"/>
+                            <constraint firstItem="DDE-7j-xLD" firstAttribute="trailing" secondItem="vsp-NL-J0D" secondAttribute="trailing" id="YBk-dT-9W7"/>
+                            <constraint firstItem="2Wf-Ja-kqz" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0535714" constant="16" id="Z5Z-lr-Iwb"/>
+                            <constraint firstItem="vsp-NL-J0D" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.845411" id="a0r-vO-eOO"/>
+                            <constraint firstItem="DDE-7j-xLD" firstAttribute="leading" secondItem="vsp-NL-J0D" secondAttribute="leading" id="bI2-zd-rGb"/>
+                            <constraint firstItem="2Wf-Ja-kqz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.613527" priority="752" id="bJU-rZ-c01"/>
+                            <constraint firstItem="2Wf-Ja-kqz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bMg-UW-z8x"/>
+                            <constraint firstItem="DDE-7j-xLD" firstAttribute="top" secondItem="vsp-NL-J0D" secondAttribute="bottom" constant="15" id="fTc-3g-6nf"/>
+                            <constraint firstItem="3so-RZ-3Xx" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.768116" priority="752" id="gFB-H2-sfJ"/>
+                            <constraint firstItem="vsp-NL-J0D" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.227679" constant="9.9996160000000032" id="hj0-H2-ODr"/>
+                            <constraint firstItem="ZZA-1H-nvH" firstAttribute="top" secondItem="DDE-7j-xLD" secondAttribute="bottom" constant="21" id="kGM-eC-52D"/>
+                            <constraint firstItem="2Wf-Ja-kqz" firstAttribute="top" secondItem="Fqb-kw-aT2" secondAttribute="bottom" constant="15" id="pTe-SJ-rjW"/>
+                            <constraint firstItem="3so-RZ-3Xx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="6" id="s1q-86-grG"/>
+                            <constraint firstItem="Fqb-kw-aT2" firstAttribute="top" secondItem="DDE-7j-xLD" secondAttribute="bottom" constant="15" id="sGD-Yv-c5m"/>
+                            <constraint firstItem="ZZA-1H-nvH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xxO-0N-uUv"/>
+                            <constraint firstItem="DDE-7j-xLD" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.227679" constant="9.9996160000000032" id="yyW-a0-FVx"/>
+                            <constraint firstItem="ZZA-1H-nvH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.18599" id="zb6-dr-ibz"/>
+                            <constraint firstItem="Ieg-Nk-hTK" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0714286" constant="-2.5600000000736145e-05" id="zvd-Wy-Yoa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomProductView" destination="Fqb-kw-aT2" id="sqz-br-6Fx"/>
+                        <outlet property="calculateButton" destination="2Wf-Ja-kqz" id="3yV-HE-ogT"/>
+                        <outlet property="centerProductView" destination="DDE-7j-xLD" id="Osi-QO-6Zi"/>
+                        <outlet property="clearButton" destination="Ieg-Nk-hTK" id="0cA-pJ-lju"/>
+                        <outlet property="gr100Button" destination="NLn-SW-4sa" id="ajb-5y-cID"/>
+                        <outlet property="gr10Button" destination="MwH-2o-Z8K" id="Pim-jP-gDr"/>
+                        <outlet property="gr1Button" destination="Zkt-Uw-Pmc" id="bKh-Sv-lKi"/>
+                        <outlet property="kg1Button" destination="UOH-kE-D1i" id="Ja7-XQ-OQA"/>
+                        <outlet property="plusButton" destination="ZZA-1H-nvH" id="fg3-Ld-e5l"/>
+                        <outlet property="topProductView" destination="vsp-NL-J0D" id="qkb-Wo-I64"/>
+                        <outletCollection property="weightButtons" destination="Zkt-Uw-Pmc" collectionClass="NSMutableArray" id="h8z-Oh-Lz3"/>
+                        <outletCollection property="weightButtons" destination="MwH-2o-Z8K" collectionClass="NSMutableArray" id="NcW-F7-2E2"/>
+                        <outletCollection property="weightButtons" destination="NLn-SW-4sa" collectionClass="NSMutableArray" id="oM2-7Y-4Pg"/>
+                        <outletCollection property="weightButtons" destination="UOH-kE-D1i" collectionClass="NSMutableArray" id="SWq-mU-6kb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="240.57971014492756" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plusButton" width="74" height="74"/>
+    </resources>
+</document>
